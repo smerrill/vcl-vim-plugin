@@ -1,7 +1,7 @@
 " Vim syntax file
 " Filename:     vcl.vim
 " Language:     Varnish configuation Language, http://www.varnish-cache.org/wiki/VCL
-" Maintainer:   Elan Ruusamäe <glen@delfi.ee>
+" Maintainer:   Elan RuusamÃ¤e <glen@delfi.ee>
 " Version Info: $Revision: 1.7 $
 " Last Change:  $Date: 2010/04/06 08:24:28 $ UTC
 
@@ -53,7 +53,7 @@ syn match  vclNumber   display contained "\d\+"
 syn match  vclNumberTime   display contained "\d\+[dhsm]"
 
 " client
-syn match  vclOption   /client\.ip/
+syn match  vclOption   /client\.\(ip\|identity\)/
 " server
 syn match  vclOption   /server\.\(ip\|port\)/
 " req
@@ -102,4 +102,3 @@ hi link vclModes            Operator
 hi link vclOption           Identifier
 hi link vclNumber           Number
 hi link vclNumberTime       Number
-
