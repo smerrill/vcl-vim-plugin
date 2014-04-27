@@ -57,11 +57,11 @@ syn match  vclOption   /client\.\(ip\|identity\)/
 " server
 syn match  vclOption   /server\.\(ip\|port\)/
 " req
-syn match  vclOption   /req\.\(hash\|request\|url\|proto\|backend\.healthy\|backend\|grace\|xid\|restarts\)/
+syn match  vclOption   /req\.\(hash\|request\|method\|url\|proto\|backend\healthy\|backend\|grace\|xid\|restarts\)/
 " bereq
-syn match  vclOption   /bereq\.\(request\|url\|proto\|connect_timeout\|first_byte_timeout\|between_bytes_timeout\)/
+syn match  vclOption   /bereq\.\(request\|method\|url\|proto\|connect_timeout\|first_byte_timeout\|between_bytes_timeout\)/
 " beresp
-syn match  vclOption   /beresp\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\|saintmode\)/
+syn match  vclOption   /beresp\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\|saintmode\|keep\)/
 " obj
 syn match  vclOption   /obj\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\)/
 " resp
